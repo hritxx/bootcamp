@@ -15,6 +15,14 @@
 
 ## 🚀 Installation
 
+### From PyPI (Stable Release)
+
+```bash
+pip install hriteek-hello
+```
+
+### From Test PyPI (Pre-Release)
+
 ```bash
 pip install -i https://test.pypi.org/simple/ hriteek-hello
 ```

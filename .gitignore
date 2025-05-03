@@ -172,3 +172,61 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# PyInstaller
+*.spec
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Pyre type checker
+.pyre/
+
+# VSCode settings
+.vscode/
+
+# macOS files
+.DS_Store
+
+# Python environment metadata
+.uv/
+
+# dotenv environment files
+.env
+.env.*
+
+# MyPy
+.mypy_cache/
+dmypy.json
+
+# PyCharm
+.idea/

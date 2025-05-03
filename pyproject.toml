@@ -1,0 +1,11 @@
+[project]
+name = "hriteek-hello"
+version = "0.1.0"
+description = "Say hello with style"
+authors = [{ name = "Hriteek Roy", email = "hriteekroy1869@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/hritxx/hriteek-hello"

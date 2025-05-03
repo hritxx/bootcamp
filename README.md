@@ -51,6 +51,12 @@ say_hello()
 say_hello("Hriteek")
 ```
 
+## 🎬 Demo
+
+Watch the package in action:
+
+[![asciicast](https://asciinema.org/a/ZGNoWlYfwb2hgnEbqBvwEr8sZ.svg)](https://asciinema.org/a/ZGNoWlYfwb2hgnEbqBvwEr8sZ)
+
 ## 📘 API Reference
 
 ### `say_hello(name: Optional[str] = None) -> None`

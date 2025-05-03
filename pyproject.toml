@@ -1,9 +1,10 @@
 [project]
 name = "hriteek-hello"
-version = "0.2.0"
+version = "1.1.2"
 description = "Say hello with style"
 authors = [{ name = "Hriteek Roy", email = "hriteekroy1869@gmail.com" }]
-readme = "README.md"
+readme = {file = "README.md", content-type = "text/markdown"}
+
 requires-python = ">=3.11"
 dependencies = [
     "rich",
@@ -15,3 +16,4 @@ hriteek-hello = "hriteek_hello.cli:app"
 
 [project.urls]
 Homepage = "https://github.com/hritxx/hriteek-hello"
+Repository = "https://github.com/hritxx/hriteek-hello" 

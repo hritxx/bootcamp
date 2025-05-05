@@ -1,0 +1,50 @@
+site_name: Developer Documentation Training
+site_description: Tools and best practices for technical documentation
+site_author: Hriteek Roy
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - search.highlight
+    - search.suggest
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+
+nav:
+  - Home: "index.md"
+  - Markdown Essentials:
+      - "Introduction": "markdown/introduction.md"
+      - "Cheatsheet": "markdown/cheatsheet.md"
+      - "README Authoring": "markdown/readme-authoring.md"
+  - Visual Thinking:
+      - "Sequence Diagrams": "diagrams/sequence-diagrams.md"
+      - "Block Diagrams": "diagrams/block-diagrams.md"
+      - "Mind Maps": "diagrams/mind-maps.md"
+  - Design Documentation:
+      - "Design Documents": "design/design-docs.md"
+      - "Architecture": "design/architecture.md"
+      - "Best Practices": "design/best-practices.md"
+  - Tools:
+      - "MkDocs": "tools/mkdocs.md"
+      - "Draw.io": "tools/drawio.md"
+      - "Mermaid.js": "tools/mermaid.md"
+      - "XMind": "tools/xmind.md"
+  - Daily Log: "daily-log/index.md"
+
+plugins:
+  - search

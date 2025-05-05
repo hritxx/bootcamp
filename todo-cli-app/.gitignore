@@ -174,3 +174,7 @@ cython_debug/
 .pypirc
 cli_commands.txt
 .DS_Store
+
+__pycache__/
+.venv/
+tasks.json

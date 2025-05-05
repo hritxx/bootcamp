@@ -1,0 +1,13 @@
+[project]
+name = "todo-cli-app"
+version = "0.1.0"
+description = "A simple CLI to-do list manager"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+dependencies = []
+
+[project.scripts]
+todo = "todo.main:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

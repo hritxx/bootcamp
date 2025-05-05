@@ -2,7 +2,7 @@
 name = "todo-cli-app"
 version = "0.1.0"
 description = "A simple CLI to-do list manager"
-authors = [{ name = "Your Name", email = "you@example.com" }]
+authors = [{ name = "Hriteek Roy", email = "hriteekroy1869@gmail.com" }]
 dependencies = []
 
 [project.scripts]

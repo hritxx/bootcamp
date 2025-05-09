@@ -1,0 +1,26 @@
+nodes:
+  - tag: start
+    type: dag_engine.processors.start.emit_lines
+  - tag: trim
+    type: dag_engine.processors.trim.trim
+  - tag: tagger
+    type: dag_engine.processors.tagger.tag_lines
+  - tag: error
+    type: dag_engine.processors.counters.count_errors
+  - tag: warn
+    type: dag_engine.processors.counters.count_warnings
+  - tag: general
+    type: dag_engine.processors.output.terminal
+  - tag: end
+    type: dag_engine.processors.output.terminal
+
+routes:
+  start: [trim]
+  trim: [tagger]
+  tagger:
+    error: [error]
+    warn: [warn]
+    general: [general]
+  error: [end]
+  warn: [end]
+  general: [end]

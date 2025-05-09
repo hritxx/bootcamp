@@ -1,0 +1,25 @@
+start:
+  - processor: processors.start.tag_lines
+    outputs:
+      error: error
+      warn: warn
+      general: general
+
+error:
+  - processor: processors.filters.only_error
+    outputs:
+      general: general
+
+warn:
+  - processor: processors.filters.only_warn
+    outputs:
+      end: end
+
+general:
+  - processor: processors.formatters.snakecase
+    outputs:
+      end: end
+
+end:
+  - processor: processors.output.terminal
+    outputs: {}

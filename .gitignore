@@ -172,5 +172,5 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-cli_commands.txt
+crazy_cli.txt
 .DS_Store

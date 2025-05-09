@@ -1,0 +1,6 @@
+Hello from the test file!
+
+This file is used to verify that the Real-Time File Processing System
+is working correctly in both single-file and watch modes.
+
+Timestamp: 2025-05-10 12:00:00

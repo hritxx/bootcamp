@@ -1,4 +1,3 @@
-# core.py
 from processor_types import ProcessorFn
 
 def apply_pipeline(line: str, processors: list[ProcessorFn]) -> str:

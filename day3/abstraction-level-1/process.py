@@ -4,7 +4,7 @@ import os
 
 app = typer.Typer()
 
-# Load .env file to get default mode
+
 load_dotenv()
 DEFAULT_MODE = os.getenv("MODE", "uppercase")
 
@@ -28,7 +28,7 @@ def write_output(lines, output_path: str | None):
                 f.write(line + "\n")
     else:
         for line in lines:
-            print(line)
+            print(line) 
 
 @app.command()
 def process(

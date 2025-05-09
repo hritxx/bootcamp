@@ -1,0 +1,17 @@
+pipeline:
+  - type: processors.snake.to_snakecase
+
+  - type: processors.splitter.create_line_splitter
+    config:
+      delimiter: ","
+
+  - type: processors.counter.create_line_counter
+    config:
+      format: "{count}. {line}"
+      start_num: 1
+
+  - type: processors.filter.create_line_filter
+    config:
+      min_length: 3
+
+  - type: processors.upper.to_uppercase

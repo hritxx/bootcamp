@@ -1,0 +1,11 @@
+nodes:
+  - tag: start
+    type: state_engine.processors.start.tag_lines
+  - tag: error
+    type: state_engine.processors.filters.only_error
+  - tag: warn
+    type: state_engine.processors.filters.only_warn
+  - tag: general
+    type: state_engine.processors.formatters.snakecase
+  - tag: end
+    type: state_engine.processors.output.terminal

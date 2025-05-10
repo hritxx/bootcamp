@@ -1,4 +1,3 @@
-# cli.py
 import typer
 from main import process_command
 

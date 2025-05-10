@@ -1,7 +1,6 @@
 from typing import Dict, Any, Optional
 
 def contains_filter(text: str, config: Dict[str, Any]) -> Optional[str]:
-    """Filter text based on whether it contains specified substring."""
     substring = config.get("contains", "")
     invert = config.get("invert", False)
     
@@ -12,7 +11,6 @@ def contains_filter(text: str, config: Dict[str, Any]) -> Optional[str]:
     return text if contains else None
 
 def length_filter(text: str, config: Dict[str, Any]) -> Optional[str]:
-    """Filter text based on length constraints."""
     min_length = config.get("min_length", 0)
     max_length = config.get("max_length", float('inf'))
     
@@ -22,7 +20,6 @@ def length_filter(text: str, config: Dict[str, Any]) -> Optional[str]:
     return None
 
 def regex_filter(text: str, config: Dict[str, Any]) -> Optional[str]:
-    """Filter text based on regex pattern."""
     import re
     pattern = config.get("pattern", ".*")
     invert = config.get("invert", False)

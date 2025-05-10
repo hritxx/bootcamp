@@ -1,5 +1,5 @@
 import importlib
-import yaml
+import yaml # type: ignore
 from typing import Iterator, Tuple, Dict, Callable
 
 Line = str

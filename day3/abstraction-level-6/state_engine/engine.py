@@ -1,5 +1,5 @@
 import importlib
-import yaml
+import yaml # type: ignore
 from typing import Iterator, Tuple, Dict, Callable
 from collections import deque
 
@@ -33,12 +33,12 @@ class StateEngine:
 
         while queue:
             tag, line = queue.pop(0)
-            print(f"[DEBUG] Processing tag={tag}, line={line!r}")  # 🪵 DEBUG LINE
+            print(f"[DEBUG] Processing tag={tag}, line={line!r}") 
             if tag == "end":
                 continue
             processor = self.tag_to_processor.get(tag)
             if not processor:
                 raise ValueError(f"No processor found for tag '{tag}'")
             for new_tag, new_line in processor([(tag, line)]):
-                print(f"[DEBUG] → Emitting tag={new_tag}, line={new_line!r}")  # 🪵 DEBUG LINE
+                print(f"[DEBUG] → Emitting tag={new_tag}, line={new_line!r}")  
                 queue.append((new_tag, new_line))

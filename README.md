@@ -1,5 +1,12 @@
-# My Documentation Bootcamp Journey
+# Aganitha.ai Documentation Bootcamp Journey
 
-This repository tracks my progress learning developer documentation tools and best practices.
+This repository tracks my progress learning developer documentation tools and best practices during the 2-week Aganitha.ai bootcamp.
 
-I'll update this repo daily as I progress through the bootcamp!
+## Daily Progress
+
+I'll update this repository daily with:
+
+- Tasks completed
+- New skills learned
+- Challenges encountered
+- Resources discovered

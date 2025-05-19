@@ -5,7 +5,7 @@ A Python-based system for extracting and analyzing scientific paper data from PM
 ## 🌟 Features
 
 - **Paper Data Extraction**: Fetch title, abstract, and figures from PMC articles using the BioC-PMC API
-- **Entity Recognition**: Annotate text with biomedical entities (genes, diseases, chemicals, etc.) using PubTator API
+- **Entity Recognition**: Annotate text with biomedical entities (genes, diseases, chemicals, etc.) using BERN API
 - **Data Storage**: Efficiently store extracted data in a DuckDB database
 - **Easy Access**: RESTful API for programmatic access to extracted paper data
 - **Export Options**: Download paper data in various formats (JSON, CSV)

@@ -6,11 +6,11 @@ import logging
 from datetime import datetime
 from typing import List
 
-# Initialize logging
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Drill 4: Versioned Data Storage
+
 
 def update_user_email_with_history(db: Session, user_id: int, new_email: str) -> bool:
     user = db.query(User).filter(User.id == user_id, User.deleted_at == None).first()
